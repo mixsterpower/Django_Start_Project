@@ -5,23 +5,23 @@ cheat sheet  >> https://dev.to/ericchapman/my-beloved-django-cheat-sheet-2056
 
 
 Basic setting start project Django 
-### สร้าง virtualenv
+### สร้าง Virtualenv
 ```python
 virtualenv venv
 ```
 ```python
 venv\Scripts\activate
 ```
-### install django
+### install Django
 ```python
 pip install django
 pip install Pillow
 ```
-### สร้าง projact
+### สร้าง Project
 ```python
 django-admin startproject myproject .
 ```
-### สร้าง app 
+### สร้าง App 
 ```python
 python manage.py startapp mywebsite
 ```
@@ -97,28 +97,20 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 ```
-### คำสั่งอื่นๆ
+### คำสั่ง Migrate Database
 `python manage.py makemigrations`
 
 `python manage.py migrate`
-
+### คำสั่งสร้าง User Admin
 `python manage.py createsuperuser`
-
+### คำสั่ง Runserver
 `python manage.py runserver`
-### Database
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-```
-### Mysql
+
+### Mysql install
 ```python
 pip install mysqlclient
 ```
-
+### Mysql setting.py
 ```python
 DATABASES = {
     'default': {
