@@ -136,6 +136,6 @@ DATABASES = {
 
 ### PowerShell with the "Run as Administrator" 
 
-```python
-set-executionpolicy remotesigned
+```Database Clear Django
+python manage.py flush
 ```
