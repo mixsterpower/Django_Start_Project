@@ -134,7 +134,7 @@ DATABASES = {
 
 
 
-### PowerShell with the "Run as Administrator" 
+### Database Clear Django 
 
 ```Database Clear Django
 python manage.py flush
