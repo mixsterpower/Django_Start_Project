@@ -5,7 +5,7 @@ cheat sheet  >> https://dev.to/ericchapman/my-beloved-django-cheat-sheet-2056
 
 
 Basic setting start project Django 
-### สร้าง Virtualenv
+### สร้าง Virtualenv และ Activate
 ```python
 virtualenv venv
 ```
@@ -19,7 +19,7 @@ pip install Pillow
 ```
 ### สร้าง Project
 ```python
-django-admin startproject myproject .
+django-admin startproject myproject 
 ```
 ### สร้าง App 
 ```python
@@ -101,7 +101,7 @@ def index(request):
 `python manage.py makemigrations`
 
 `python manage.py migrate`
-### คำสั่งสร้าง User Admin
+### คำสั่งสร้าง UserAdmin
 `python manage.py createsuperuser`
 ### คำสั่ง Runserver
 `python manage.py runserver`
