@@ -1,6 +1,6 @@
 # Django-basic-start-project 
+![image]({https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green})
 
-<img src="{https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green}" />
 ### สร้าง Virtualenv และ Activate
 ```python
 python -m venv name_venv
