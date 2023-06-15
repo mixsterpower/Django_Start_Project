@@ -96,15 +96,19 @@ def index(request):
     return render(request, 'index.html')
 ```
 ### คำสั่ง Migrate Database
+```python
 `python manage.py makemigrations`
 `python manage.py migrate`
+
 ### คำสั่งสร้าง UserAdmin
+```python
 `python manage.py createsuperuser`
+```
 ### คำสั่ง Runserver
+```python
 `python manage.py runserver`
-
+```
 ### Database Clear Django 
-
-```Database Clear Django
+```python
 python manage.py flush
 ```
