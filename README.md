@@ -8,8 +8,9 @@ Basic setting start project Django
 ### สร้าง Virtualenv และ Activate
 ```python
 python -m venv name_venv
-```
 name_venv\Scripts\activate
+```
+
 ```
 ### install Django
 ```python
