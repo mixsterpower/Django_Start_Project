@@ -7,10 +7,9 @@ cheat sheet  >> https://dev.to/ericchapman/my-beloved-django-cheat-sheet-2056
 Basic setting start project Django 
 ### สร้าง Virtualenv และ Activate
 ```python
-virtualenv venv
+python -m venv name_venv
 ```
-```python
-venv\Scripts\activate
+name_venv\Scripts\activate
 ```
 ### install Django
 ```python
@@ -19,14 +18,14 @@ pip install Pillow
 ```
 ### สร้าง Project
 ```python
-django-admin startproject myproject 
+django-admin startproject project_name 
 ```
 ### สร้าง App 
 ```python
-python manage.py startapp mywebsite
+python manage.py startapp app_name
 ```
 ### settings.py 
-```python
+```python เพิ่ม App ที่สร้างเข้าไปใน Project ที่ไฟล์ Setting.py
 INSTALLED_APPS = [
 	'mywebsite',
 
@@ -37,7 +36,7 @@ INSTALLED_APPS = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path.joinpath(BASE_DIR, 'templates')], 
+        'DIRS': [Path.joinpath(BASE_DIR, 'templates')],   #ใส่ Path ของ Templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -50,14 +49,14 @@ TEMPLATES = [
     },
 ]
 
-TIME_ZONE = 'Asia/Bangkok'
+TIME_ZONE = 'Asia/Bangkok' # เพิ่ม Timezone
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
+#เพิ่ม Path ของ staticfile
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 
@@ -73,10 +72,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('mywebsite.urls')),
+    path('', include('app_name.urls')),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 ```
 ### urls.py ใน app
 ```python
@@ -99,32 +98,11 @@ def index(request):
 ```
 ### คำสั่ง Migrate Database
 `python manage.py makemigrations`
-
 `python manage.py migrate`
 ### คำสั่งสร้าง UserAdmin
 `python manage.py createsuperuser`
 ### คำสั่ง Runserver
 `python manage.py runserver`
-
-### Mysql install
-```python
-pip install mysqlclient
-```
-### Mysql setting.py
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '',
-        'USER': '',
-        'PASSWORD': '',
-        'PORT': '3306',
-        'NAME': ''
-    }
-}
-```
-
-
 
 ### Database Clear Django 
 
