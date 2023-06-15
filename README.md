@@ -1,5 +1,8 @@
-# Django-basic-start-project 
-![image]({https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green})
+
+
+# Django-basic-start-project  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green" /> <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+
+
 
 ### สร้าง Virtualenv และ Activate
 ```python
@@ -82,7 +85,7 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
-### folder
+### Folder ที่เพิ่มมา
 `media`
 `static`
 `templates`
@@ -96,7 +99,7 @@ def index(request):
 ```python
 python manage.py makemigrations
 python manage.py migrate
-
+```
 ### คำสั่งสร้าง UserAdmin
 ```python
 python manage.py createsuperuser
