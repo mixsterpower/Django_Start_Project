@@ -97,16 +97,16 @@ def index(request):
 ```
 ### คำสั่ง Migrate Database
 ```python
-`python manage.py makemigrations`
-`python manage.py migrate`
+python manage.py makemigrations
+python manage.py migrate
 
 ### คำสั่งสร้าง UserAdmin
 ```python
-`python manage.py createsuperuser`
+python manage.py createsuperuser
 ```
 ### คำสั่ง Runserver
 ```python
-`python manage.py runserver`
+python manage.py runserver
 ```
 ### Database Clear Django 
 ```python
