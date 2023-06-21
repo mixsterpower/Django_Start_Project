@@ -70,7 +70,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('app_name.urls')),
+    path('', include('app_name.urls')), #เพิ่ม app เข้าใน project url
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
