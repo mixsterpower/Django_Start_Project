@@ -88,7 +88,7 @@ urlpatterns = [
 `media`
 `static`
 `templates`
-### views.py
+### views.py ของ app
 ```python
 from django.shortcuts import render
 def index(request):
