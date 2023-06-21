@@ -25,7 +25,7 @@ python manage.py startapp app_name
 ### settings.py 
 ```python #เพิ่ม App ที่สร้างเข้าไปใน Project ที่ไฟล์ Setting.py
 INSTALLED_APPS = [
-	'mywebsite',
+	'mywebsite', #เพิ่ม app เข้า project
 
 ]
 
