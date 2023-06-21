@@ -12,7 +12,6 @@ name_venv\Scripts\activate
 ### install Django
 ```python
 pip install django
-pip install Pillow
 pip install -r requirements.txt #install .txt file
 ```
 ### สร้าง Project
